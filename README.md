@@ -1,4 +1,4 @@
-# modul pribadi
+# modul pribadi -> convert code python menyerupai php
 
 [![Youtobe: iewil](https://img.shields.io/youtube/channel/subscribers/UCvBSqRaT6nsPvtl8m6GaQpg?style=social)](https://youtube.com/c/iewil)
 [![Github: iewil](https://img.shields.io/github/followers/iewilmaestro?style=social)](https://github.com/iewilmaestro)
