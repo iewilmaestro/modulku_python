@@ -19,14 +19,16 @@ pip install iewil
 https://pypi.org/project/iewil/0.0.2
 
 ### Fitur
-1. Banner(title,versi)
-2. Line()
-    - menampilkan garis
-4. Echo(message,eror = False)
+- [x] Banner(title,versi)
+    - banner pribadi
+- [x] Line()
+- [x] Echo(message,eror = False)
     - jika eror = false maka print message warna hijau
     - jika error = true maka print message warna merah 
-5. Simpan(filename)
-6. Timer(seconds)
+- [x] Simpan(filename)
+- [x] Timer(seconds)
+    - isi seconds dengan waktu dalam detik
+- [ ] Explode
 
 ### Contoh
 ```py
