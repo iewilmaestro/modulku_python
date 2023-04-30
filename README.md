@@ -18,6 +18,16 @@ pip install iewil
 ### Download
 https://pypi.org/project/iewil/0.0.2
 
+### Fitur
+1. Banner(title,versi)
+2. Line()
+    - menampilkan garis
+4. Echo(message,eror = False)
+    - jika eror = false maka print message warna hijau
+    - jika error = true maka print message warna merah 
+5. Simpan(filename)
+6. Timer(seconds)
+
 ### Contoh
 ```py
 from iewil import * 
