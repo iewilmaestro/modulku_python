@@ -11,14 +11,12 @@ $ pkg update && pkg upgrade
 $ pkg install python
 ```
 
-### Instalasi / download
+### Instalasi
 ```py
-#instalasi
 pip install iewil
-#download
-https://pypi.org/project/iewil/0.0.2
 ```
-
+### Download
+https://pypi.org/project/iewil/0.0.2
 
 ### Contoh
 ```py
