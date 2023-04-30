@@ -32,7 +32,7 @@ https://pypi.org/project/iewil/0.0.2
 
 ### Contoh
 ```py
-from iewil import * 
+from iewil import Timer
 Timer(60) # in seconds
 ```
 
