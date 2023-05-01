@@ -29,6 +29,7 @@ https://pypi.org/project/iewil/0.0.2
 - [x] Timer(seconds)
     - isi seconds dengan waktu dalam detik
 - [ ] Explode
+- [ ] Curl
 
 ### Contoh
 ```py
