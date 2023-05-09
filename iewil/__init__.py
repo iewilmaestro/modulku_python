@@ -100,4 +100,3 @@ def Timer(tmr):
             break
         print("         " + x + sym[a % 4] + p + str(int(res / 3600)) + x + ":" + p + str(int((res % 3600) / 60)) + x + ":" + p + str(int(res % 60)) + nic[a % 18], end="\r")
         time.sleep(0.1)
-    print("\r                                   \r")
