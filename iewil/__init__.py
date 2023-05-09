@@ -62,14 +62,38 @@ def Simpan(filename):
         file.write(data)
         file.close()
     return data
-
-def Timer(seconds):
-    warna = 0
-    while seconds:
-        for x in [' \ ',' | ',' / ',' - ']:
-            mins, secs = divmod(seconds, 60)
-            hour, mins = divmod(mins, 60)
-            timer = f' ({x}) {hour}:{mins}:{secs} '
-            print(timer,end='\r')
-            sleep(0.25)
-        seconds -= 1
+def auth(wr):
+    nic = []
+    nic.append(wr + " i" + p + "ewil-official")
+    nic.append(wr + " ie" + p + "wil-official")
+    nic.append(wr + " iew" + p + "il-official")
+    nic.append(" i" + wr + "ewi" + p + "l-official")
+    nic.append(" ie" + wr + "wil" + p + "-official")
+    nic.append(" iew" + wr + "il-" + p + "official")
+    nic.append(" iewi" + wr + "l-o" + p + "fficial")
+    nic.append(" iewil" + wr + "-of" + p + "ficial")
+    nic.append(" iewil" + wr + "-of" + p + "ficial")
+    nic.append(" iewil-" + wr + "off" + p + "icial")
+    nic.append(" iewil-o" + wr + "ffi" + p + "cial")
+    nic.append(" iewil-of" + wr + "fic" + p + "ial")
+    nic.append(" iewil-of" + wr + "fic" + p + "ial")
+    nic.append(" iewil-off" + wr + "ici" + p + "al")
+    nic.append(" iewil-offi" + wr + "cia" + p + "l")
+    nic.append(p + " iewil-offic" + wr + "ial")
+    nic.append(p + " iewil-offici" + wr + "al")
+    nic.append(p + " iewil-officia" + wr + "l")
+    return nic
+def Timer(tmr):
+    sym = [' ─ ', ' / ', ' │ ', ' \ ']
+    timr = time.time() + tmr
+    a = 0
+    while True:
+        a += 1
+        x=m
+        nic = auth(m)
+        res = timr - time.time()
+        if res < 1:
+            break
+        print("         " + x + sym[a % 4] + p + str(int(res / 3600)) + x + ":" + p + str(int((res % 3600) / 60)) + x + ":" + p + str(int(res % 60)) + nic[a % 18], end="\r")
+        time.sleep(0.1)
+    print("\r                                   \r")
