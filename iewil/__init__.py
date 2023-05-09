@@ -1,6 +1,7 @@
 from time import sleep
-import asyncio, os, sys, time, logging,json
+import asyncio, os, sys, time, logging,json,random
 from datetime import datetime
+
 
 b = "\033[1;34m"
 c = "\033[1;36m"
@@ -62,6 +63,7 @@ def Simpan(filename):
         file.write(data)
         file.close()
     return data
+    
 def auth(wr):
     nic = []
     nic.append(wr + " i" + p + "ewil-official")
@@ -83,14 +85,16 @@ def auth(wr):
     nic.append(p + " iewil-offici" + wr + "al")
     nic.append(p + " iewil-officia" + wr + "l")
     return nic
+
 def Timer(tmr):
+    col = [b, c, d, h, k, m, u]
     sym = [' ─ ', ' / ', ' │ ', ' \ ']
     timr = time.time() + tmr
     a = 0
     while True:
         a += 1
-        x=m
-        nic = auth(m)
+        x = random.choice(col)
+        nic = auth(x)
         res = timr - time.time()
         if res < 1:
             break
