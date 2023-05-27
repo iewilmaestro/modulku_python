@@ -16,7 +16,7 @@ $ pkg install python
 pip install iewil
 ```
 ### Download
-https://pypi.org/project/iewil/0.0.2
+https://pypi.org/project/iewil/0.0.4
 
 ### Fitur
 - [x] Banner(title,versi)
