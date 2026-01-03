@@ -1,24 +1,25 @@
 from setuptools import setup, find_packages
+from pathlib import Path
 
-VERSION = '0.0.4'
-DESCRIPTION = 'modul pribadi ygy'
+# Baca README.md
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
-# Setting up
 setup(
     name="iewil",
-    version=VERSION,
+    version="0.0.6",
     author="iewilmaestro",
-    author_email="<purna.iera@gmail.com>",
-    description=DESCRIPTION,
+    author_email="purna.iera@gmail.com",
+    description="Modul pribadi iewil: display, captcha, html scraping, cache storage",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     packages=find_packages(),
     install_requires=[],
-    keywords=['iewil'],
+    keywords=['iewil', 'display', 'captcha', 'scraping', 'cache'],
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",
-        "Programming Language :: Python",
-        "Operating System :: Unix",
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: Microsoft :: Windows",
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
     ]
 )
