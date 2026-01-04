@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="iewil",
-    version="0.0.7",
+    version="0.0.8",
     author="iewilmaestro",
     author_email="purna.iera@gmail.com",
     description="Modul pribadi iewil: display, captcha, html scraping, cache storage",
@@ -18,6 +18,11 @@ setup(
         'requests',
         'pillow'
     ],
+    entry_points={
+        "console_scripts": [
+            "iewil=iewil.cli:main"
+        ]
+    },
     keywords=['iewil', 'display', 'captcha', 'scraping', 'cache'],
     classifiers=[
         "Development Status :: 1 - Planning",
