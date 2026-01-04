@@ -48,26 +48,7 @@ pip install iewil==0.0.6
 
 ## Cara Pakai
 
-```python
-from iewil.functions.display import Display
-from iewil.functions.show_error import ShowError
-from iewil.functions.cache_storage import CacheStorage
 
-# Set title & register
-Display.TITLE = "MyScript"
-Display.REGISTER = "t.me/MyBot"
-
-# Tampilkan banner
-Display.banner(author="iewil")
-
-# Menyimpan cache
-CacheStorage.simpan("cookie")
-CacheStorage.simpan("user")
-
-# Tangani error
-error_handler = ShowError("error.log")
-error_handler._start()
-```
 * Display
 ```python
 # test display
@@ -84,6 +65,14 @@ Display.debug("Ini debug")
 Display.sukses("Berhasil")
 Display.error("Error contoh")
 Display.timer(10)
+```
+* Free Captcha
+```python
+from iewil import Free
+base64_captcha = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAyCAMAAAAa0..."
+cap = Free.Icon(base64_captcha)
+if cap["status"] is True :
+    print(cap["result"])
 ```
 * DataStore
 ```python

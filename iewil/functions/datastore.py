@@ -42,7 +42,7 @@ class DataStore:
             return data[key]
 
         if value is None:
-            Display.Isi(key)
+            Display.isi(key)
             value = input().strip()
 
         data[key] = value
